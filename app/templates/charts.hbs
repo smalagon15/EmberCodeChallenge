@@ -1,4 +1,3 @@
-<script src="https://d3js.org/d3.v4.min.js"></script>
 <div class="container padding-bellow">
 	<div class = 'well left-fifty'>
 		<h4>Bar Chart:</h4>
@@ -13,28 +12,6 @@
 </div>
 
 <div class="container">
-
-	<div class = 'well left-fifty'>
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Grant ID</th>
-					<th>Date</th>
-					<th>Cost</th>
-				</tr>
-				<tbody>
-				{{#each grant in grants}}
-				<tr>
-					<td>grant.grantId</td>
-					<td>grant.date</td>
-					<td>grant.cost</td>
-				</tr>
-				{{/each}}
-				</tbody>
-			</thead>
-		</table>
-	</div>
-
 	<div class="well right-fifty">
 		<form>
 		<div class="form-group">

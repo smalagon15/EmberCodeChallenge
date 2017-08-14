@@ -6,7 +6,6 @@ import { scaleLinear } from 'd3-scale';
 import { extent, ascending } from 'd3-array';
 import { transition } from 'd3-transition';
 import { easeCubicInOut } from 'd3-ease';
-import { pie } from 'd3-pie';
 
 const { run, get } = Ember;
 
