@@ -1,0 +1,60 @@
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<div class="container padding-bellow">
+	<div class = 'well left-fifty'>
+		<h4>Bar Chart:</h4>
+		{{bar-chart data=csvData}}
+	</div>
+
+	<div class = 'well right-fifty'>
+		<h4>Pie Chart:</h4>
+		{{pie-chart data=csvData}}
+	</div>
+	
+</div>
+
+<div class="container">
+
+	<div class = 'well left-fifty'>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Grant ID</th>
+					<th>Date</th>
+					<th>Cost</th>
+				</tr>
+				<tbody>
+				{{#each grant in grants}}
+				<tr>
+					<td>grant.grantId</td>
+					<td>grant.date</td>
+					<td>grant.cost</td>
+				</tr>
+				{{/each}}
+				</tbody>
+			</thead>
+		</table>
+	</div>
+
+	<div class="well right-fifty">
+		<form>
+		<div class="form-group">
+			<label>Grant ID</label>
+			{{input type="text" class="form-control" placeholder="New ID" value=grantId}}
+		</div>
+		<div class="form-group">
+			<label>Award Date</label>
+			{{input type="date" class="form-control" value = date}}
+		</div>
+		<div class="form-group">
+			<label>Cost</label>
+			{{input type="text" class="form-control" placeholder="Some Dollar Amount" value = cost}}
+		</div>
+	</form>
+		<button class="btn btn-primary" {{action 'addData'}}>Add Grant</button>
+	</div>	
+</div>
+
+
+
+
+

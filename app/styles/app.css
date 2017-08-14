@@ -1,0 +1,11 @@
+.left-fifty{
+	float:left;
+	width: 49.5%;
+}
+.right-fifty{
+	float:right;
+	width: 49.5%;
+}
+.padding-bellow{
+	padding-bottom: 10px;
+}
